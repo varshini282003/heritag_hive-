@@ -1,0 +1,67 @@
+/* Resetting margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML settings */
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* background-color: #0d0d0d; */
+  color: white;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure the slideshow spans the entire screen */
+.slideshow-container {
+  position: fixed;  /* Fixed positioning to keep it in the background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  /* Ensure it stays behind content */
+  overflow: hidden;
+  pointer-events: none;  /* Prevent it from interfering with user interactions */
+}
+
+/* Content container positioning */
+#container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2; /* Ensure it stays on top of the slideshow */
+}
+
+/* Heading and tagline styles */
+#container h1 {
+  font-size: 4.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.tagline {
+  font-size: 1.8rem;
+  color: #ffdd57;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Additional page-specific styles */
+.gallery-container,
+.map-container,
+.heritage-container,
+.quiz-container,
+.reviews-container,
+.travelwithus-container {
+  z-index: 2;
+  position: relative;
+}

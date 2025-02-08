@@ -1,0 +1,142 @@
+/* Body styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000; /* Dark background */
+  color: white;
+}
+
+/* Slideshow container and images */
+.slideshow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: blur(4px) brightness(0.6); /* Slight blur and darken images */
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+/* Make active image visible */
+.slideshow img.active {
+  opacity: 1;
+}
+
+/* Overlay for darkening background */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Dark gradient */
+  z-index: 1;
+}
+
+/* Container for heading and subheading */
+#container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  z-index: 2;
+}
+
+/* Main Heading */
+#container h1 {
+  font-size: 5rem;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  margin-bottom: 15px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Subheading - Yellow or White color, bold */
+.tagline {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffcb00; /* Gold-yellow color for visibility */
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(168, 136, 136, 0.8);
+  margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  position: relative;
+  top: 0;
+  padding: 12px 24px;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.search-bar button {
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  #container h1 {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .nav-bar {
+    font-size: 1rem;
+    gap: 20px;
+  }
+
+  .search-bar {
+    width: 90%;
+    padding: 10px 15px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

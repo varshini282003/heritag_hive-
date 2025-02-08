@@ -1,0 +1,65 @@
+/* GalleryPage.css */
+
+/* Main container for the gallery */
+.gallery-container {
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+  overflow-y: auto;  /* Allow scrolling if content overflows */
+  height: 80vh;  /* Fixed height for the gallery container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gallery title styling */
+.gallery-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid container to arrange images in a responsive grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid columns adjust based on screen size */
+  gap: 20px;  /* Space between images */
+  width: 100%;
+  overflow-y: auto;  /* Enable scrolling if content overflows */
+}
+
+/* Styling for individual image items */
+.image-item {
+  text-align: center;  /* Ensure the image name is centered */
+  padding: 10px;
+}
+
+/* Individual image styling */
+.image-grid img {
+  width: 100%;
+  height: auto;  /* Maintain aspect ratio of images */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.image-grid img:hover {
+  transform: scale(1.05);  /* Zoom effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image name styling */
+.image-name {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;  /* Add space between image and name */
+}

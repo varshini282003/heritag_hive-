@@ -1,0 +1,94 @@
+.travel-with-us {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.travel-with-us h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.travel-with-us p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.route-input {
+  margin-bottom: 20px;
+}
+
+.route-input input {
+  padding: 10px;
+  font-size: 1rem;
+  margin: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.route-input button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.route-input button:hover {
+  background-color: #45a049;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.map-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.near-places {
+  margin-top: 40px;
+}
+
+.near-places h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.near-places ul {
+  list-style: none;
+  padding: 0;
+}
+
+.near-places li {
+  margin: 10px 0;
+}
+
+.near-places a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.near-places a:hover {
+  text-decoration: underline;
+}

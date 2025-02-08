@@ -1,0 +1,24 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.tagline {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.nav-bar a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
